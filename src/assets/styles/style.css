@@ -1,0 +1,619 @@
+@font-face {
+  font-family: nexa-bold;
+  src: url(../fonts/Nexa-Bold.otf);
+}
+
+@font-face {
+  font-family: nexa-light;
+  src: url(../fonts/Nexa-Light.otf);
+}
+
+* {
+  color: #34374c;
+}
+
+a,
+button,
+li {
+  font-family: nexa-light;
+}
+
+h3 {
+  font-family: nexa-bold;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+header {
+  text-align: center;
+  position: relative;
+}
+
+header .picContainer {
+  height: 27rem;
+  width: 100%;
+}
+
+header .logoContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header .logoContent .logoContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logoContent .logoContentContainer .logo {
+  padding: 3rem 0 1rem 0;
+}
+
+header .logoContent .logoContentContainer .logo a .picContainer {
+  height: 1.5rem;
+  width: 2.5rem;
+}
+
+header .logoContent .logoContentContainer .logo a .picContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .logoContent .logoContentContainer p {
+  color: white;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+header .logoContent .logoContentContainer .buyNowButton {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background-color: #0038e3;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: nexa-bold;
+  font-size: 1.1rem;
+}
+
+header .logoContent .logoContentContainer .buyNowButton i {
+  margin: 0;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+header .logoContent .logoContentContainer .buyNowButton span {
+  font-family: nexa-bold;
+  margin: 0;
+  color: white;
+}
+
+header .logoContent .logoContentContainer .buyNowButton:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  header .logoContent .logoContentContainer .buyNowButton {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header .picContainer {
+    height: 30rem;
+  }
+  header .logoContent .logoContentContainer {
+    padding-top: 3rem;
+  }
+}
+
+.demosContainer {
+  position: relative;
+}
+
+.demosContainer .container {
+  padding: 4.5rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.demosContainer .container .cardsContainer {
+  padding-top: 1rem;
+}
+
+.demosContainer .container .cardsContainer .card {
+  padding: 2rem 0;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc {
+  padding: 1rem 0;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn .btnContainer {
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn .btnContainer button {
+  padding: 1rem 2rem;
+  background-color: #0038e3;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: nexa-bold;
+  font-size: 1.1rem;
+  padding: 1.5rem 2.3rem;
+  margin: 1rem 0;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn .btnContainer button i {
+  margin: 0;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn .btnContainer button span {
+  font-family: nexa-bold;
+  margin: 0;
+  color: white;
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn .btnContainer button:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 768px) {
+  .demosContainer .container .cardsContainer .card .demoDesc .viewBtn .btnContainer button {
+    padding: 1.5rem 2.5rem;
+  }
+}
+
+.demosContainer .container .cardsContainer .card .demoDesc .viewBtn::before {
+  content: "";
+  background-color: #d1d1d1;
+  height: 0.01rem;
+  width: 100%;
+  position: absolute;
+  top: 2.8rem;
+  right: 0;
+  z-index: 1;
+}
+
+.demosContainer .container2 {
+  position: relative;
+  padding: 4.5rem 1rem 1rem 1rem;
+  text-align: center;
+  background: url(../images/bg1.jpg) no-repeat fixed center center/cover;
+}
+
+.demosContainer .container2 h2 {
+  color: white;
+}
+
+.demosContainer .container2 .cardsContainer .card .demoDesc h4 {
+  color: white;
+}
+
+.demosContainer .container2 .cardsContainer .card .demoDesc .viewBtn .btnContainer {
+  background: none;
+}
+
+.demosContainer .container2 .cardsContainer .card .demoDesc .viewBtn .btnContainer button {
+  padding: 0.8rem 2.3rem;
+}
+
+.demosContainer .container2 .cardsContainer .card .demoDesc .viewBtn::before {
+  background: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .demosContainer .container .cardsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .demosContainer .container .cardsContainer .card {
+    width: 47.8%;
+    padding-top: 1rem;
+    margin: 1rem 0.5rem;
+  }
+  .demosContainer .container2 .cardsContainer .card {
+    width: 31%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .demosContainer .container .cardsContainer .card {
+    width: 46%;
+    margin: 1rem;
+  }
+  .demosContainer .container2 .cardsContainer .card {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .demosContainer {
+    width: 100%;
+  }
+  .demosContainer .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .demosContainer .container .cardsContainer {
+    width: 75rem;
+  }
+}
+
+.featuresContainer .container {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.featuresContainer .container .items {
+  padding: 2rem 0 0 0;
+}
+
+.featuresContainer .container .items .item {
+  background-color: black;
+  margin: 1.5rem 0;
+}
+
+.featuresContainer .container .items .item .itemContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem auto;
+      grid-template-columns: 3rem auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: left;
+}
+
+.featuresContainer .container .items .item .itemContent i {
+  color: blue;
+  font-size: 1.8rem;
+}
+
+.featuresContainer .container .items .item .itemContent h3 {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .featuresContainer .container {
+    padding: 4rem 1.5rem;
+  }
+  .featuresContainer .container .items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 48% 48%;
+        grid-template-columns: 48% 48%;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+  .featuresContainer .container .items .item {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .featuresContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .featuresContainer .container {
+    width: 75rem;
+  }
+  .featuresContainer .container .items {
+    -ms-grid-columns: 31.9% 31.9% 31.9%;
+        grid-template-columns: 31.9% 31.9% 31.9%;
+  }
+}
+
+footer .container {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+footer .container .row .footerAbout p {
+  font-size: 0.9rem;
+}
+
+footer .container .row .footerSocial ul {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .container .row .footerSocial ul li {
+  margin: 0 1rem 0 0;
+}
+
+footer .container .row .footerSocial ul li a i {
+  color: #0038e3;
+}
+
+footer .container .row2 {
+  padding-top: 5rem;
+}
+
+footer .container .row2 .copyRightContainer span {
+  font-size: 0.7rem;
+}
+
+footer .container .row2 .subRow .footerLogo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container .row2 .subRow .footerLogo .picContainer {
+  margin: 1rem;
+  height: 1.5rem;
+  width: 2.5rem;
+}
+
+footer .container .row2 .subRow .toTopContainer {
+  position: relative;
+}
+
+footer .container .row2 .subRow .toTopContainer #backToTop {
+  position: absolute;
+  right: 4rem;
+  bottom: 1rem;
+}
+
+footer .container .row2 .subRow .toTopContainer #backToTop i {
+  font-size: 1.3rem;
+  color: #0038e3;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .container {
+    padding: 2rem;
+  }
+  footer .container .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 35%;
+        grid-template-columns: 60% 35%;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  footer .container .row2 .row .footerLogo {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    width: 100%;
+  }
+  footer .container {
+    padding-top: 5rem;
+  }
+  footer .container .row {
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  footer .container .row2 .subRow .toTopContainer #backToTop {
+    right: 5rem;
+    bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .container {
+    width: 75rem;
+  }
+  footer .container .row {
+    -ms-grid-columns: 70% 25%;
+        grid-template-columns: 70% 25%;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+  footer .container .row2 {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

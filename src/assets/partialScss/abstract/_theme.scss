@@ -1,0 +1,25 @@
+// colors
+$blue: #0038e3;
+$darkGrey: #34374c;
+$lightGrey: #d1d1d1;
+$translucentDark: #000c;
+
+@font-face {
+  font-family: nexa-bold;
+  src: url(../../fonts/Nexa-Bold.otf);
+}
+@font-face {
+  font-family: nexa-light;
+  src: url(../../fonts/Nexa-Light.otf);
+}
+* {
+  color: $darkGrey;
+}
+a,
+button,
+li {
+  font-family: nexa-light;
+}
+h3 {
+  font-family: nexa-bold;
+}

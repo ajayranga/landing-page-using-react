@@ -1,0 +1,128 @@
+.demosContainer {
+  position: relative;
+  .container {
+    padding: 4.5rem 1rem 1rem 1rem;
+    text-align: center;
+    .cardsContainer {
+      padding-top: 1rem;
+      .card {
+        padding: 2rem 0;
+        .demoDesc {
+          padding: 1rem 0;
+          .viewBtn {
+            position: relative;
+            width: 100%;
+            @include centerThis();
+            .btnContainer {
+              padding: 0 1rem;
+              position: relative;
+              z-index: 2;
+              background-color: white;
+              button {
+                @include viewDemoButton();
+              }
+            }
+            &::before {
+              content: '';
+              background-color: $lightGrey;
+              height: 0.01rem;
+              width: 100%;
+              position: absolute;
+              top: 2.8rem;
+              right: 0;
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container2 {
+    position: relative;
+    padding: 4.5rem 1rem 1rem 1rem;
+    text-align: center;
+    background: url(../../images/bg1.jpg) no-repeat fixed center
+      center / cover;
+    h2 {
+      color: white;
+    }
+    .cardsContainer {
+      .card {
+        .demoDesc {
+          h4 {
+            color: white;
+          }
+          .viewBtn {
+            .btnContainer {
+              background: none;
+              button {
+                padding: 0.8rem 2.3rem;
+              }
+            }
+            &::before {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .demosContainer {
+    .container {
+      .cardsContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        .card {
+          width: 47.8%;
+          padding-top: 1rem;
+          margin: 1rem 0.5rem;
+        }
+      }
+    }
+    .container2 {
+      .cardsContainer {
+        .card {
+          width: 31%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .demosContainer {
+    .container {
+      .cardsContainer {
+        .card {
+          width: 46%;
+          margin: 1rem;
+        }
+      }
+    }
+    .container2 {
+      .cardsContainer {
+        .card {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .demosContainer {
+    width: 100%;
+    .container {
+      width: 100%;
+      @include centerThis();
+      .cardsContainer {
+        width: 75rem;
+      }
+    }
+  }
+}

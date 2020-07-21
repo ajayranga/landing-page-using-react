@@ -1,0 +1,55 @@
+header {
+  text-align: center;
+  position: relative;
+  .picContainer {
+    height: 27rem;
+    width: 100%;
+  }
+  .logoContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    .logoContentContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .logo {
+        padding: 3rem 0 1rem 0;
+        a {
+          .picContainer {
+            height: 1.5rem;
+            width: 2.5rem;
+            img {
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      p {
+        color: white;
+        font-weight: 600;
+        margin: 2rem 0;
+      }
+      .buyNowButton {
+        margin: 1rem 0;
+        @include buyNowButton();
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    .picContainer {
+      height: 30rem;
+    }
+    .logoContent {
+      .logoContentContainer {
+        padding-top: 3rem;
+      }
+    }
+  }
+}
