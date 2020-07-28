@@ -1,6 +1,7 @@
 footer {
+  text-align: center;
   .container {
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 0rem 1rem 1rem 1rem;
     .row {
       .footerAbout {
         p {
@@ -8,10 +9,11 @@ footer {
         }
       }
       .footerSocial {
+        padding-top: 1.5rem;
         ul {
-          padding: 1rem 0;
+          padding: 0 0 1rem 0;
           display: flex;
-          justify-content: flex-start;
+          justify-content: center;
           li {
             margin: 0 1rem 0 0;
             a {
@@ -24,7 +26,6 @@ footer {
       }
     }
     .row2 {
-      padding-top: 5rem;
       .copyRightContainer {
         span {
           font-size: 0.7rem;
@@ -45,7 +46,7 @@ footer {
           #backToTop {
             position: absolute;
             right: 4rem;
-            bottom: 1rem;
+            bottom: 0.6rem;
             i {
               font-size: 1.3rem;
               color: $blue;
